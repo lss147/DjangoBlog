@@ -110,12 +110,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DJANGO_MYSQL_DATABASE') or 'djangoblog',
         'USER': os.environ.get('DJANGO_MYSQL_USER') or 'root',
-        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or 'root',
-        'HOST': os.environ.get('DJANGO_MYSQL_HOST') or '127.0.0.1',
+        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or 'Lss1476469443!',
+        'HOST': os.environ.get('DJANGO_MYSQL_HOST') or '124.222.119.167',
         'PORT': int(
             os.environ.get('DJANGO_MYSQL_PORT') or 3306),
         'OPTIONS': {
             'charset': 'utf8mb4'},
+        'LANGUAGE_CODE':'zh-hans',
+        'TIME_ZONE':'Asia/Shanghai',
+        'USE_I18N':True,
+        'USE_L10N':True,
+        'USE_TZ':False
     }}
 
 # Password validation
